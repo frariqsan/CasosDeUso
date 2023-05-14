@@ -1,3 +1,13 @@
 @startuml
+left to right direction
+Cliente as c
+c -- (Meter dinero)
+c -- (Pedir azucar)
+(Pedir producto) as pp
+c -- pp
+(Cancelar) as canc
+c -- canc
+pp .. (Devolver dinero) :<<include>>
+canc .. (Devolver dinero) :<<include>>
 
 @enduml
