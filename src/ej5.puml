@@ -1,0 +1,14 @@
+@startuml
+usecase UC1 as "Sacar dinero
+--
++ solicitud hecha"
+
+usecase UC2 as "Retener tarjeta
+
+"
+note "Description\n--\ncondicion:\n     {historia sospechosa}\npunto de extension:\n    solicitud hecha" as n
+n . UC1
+n . UC2
+UC1 <.. UC2 : <<extend>>
+
+@enduml
