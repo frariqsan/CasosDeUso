@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+:Ciudadano: as c1
+:Ciudadano extranjero: as c2
+(Registrar entrada) as reg
+(Tomar huellas) as huel
+c1 -- reg
+c2 -- huel
+huel ..> reg : <<extend>>
+c2 --|> c1
+@enduml
