@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+:new Actor: as A
+(Identificarse) as iden
+(Pagar) as p
+(Elegir mensajero) as men
+(Confirmar) as conf
+(Registrarse) as reg
+(Pagar con tarjeta) as tarje
+(Pagar con transferencia) as trans
+A -- iden
+A -- p
+A -- men
+A -- conf
+iden <.. reg : <<extend>>
+p <-- tarje
+p <-- trans
+@enduml
