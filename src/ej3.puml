@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+:Usuario: as user
+:Administrador: as admin
+(Iniciar sesion) as ini
+(Recuperar contraseña) as rec
+(Modificar contraseña) as mod
+(Cerrar sesion) as ses
+(Registrar usuario) as reg
+(Instalar programa) as install
+user -- ini
+user -- rec
+user -- mod
+user -- ses
+admin -- reg
+admin -- install
+admin --|> user
+@enduml
